@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+bash --init-file $PWD/.bash_aliases -i

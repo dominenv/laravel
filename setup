@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# create the new project in the app directory
+composer create-project laravel/laravel app
+
+# change permissions to work locally
+sudo chmod 777 -R app
+
+# switch database hostname in the .env file automatically
+sed -i -- 's/DB_HOST=127.0.0.1/DB_HOST=mysql/g' app/.env
