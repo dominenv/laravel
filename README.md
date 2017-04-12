@@ -1,0 +1,3 @@
+# DoMinEnv
+
+Docker Minimum Environment
