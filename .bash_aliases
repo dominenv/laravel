@@ -13,6 +13,8 @@ php() {
   docker exec -it dominenv_app php $@
 }
 
+alias artisan="php artisan"
+
 export -f composer
 export -f php
 
