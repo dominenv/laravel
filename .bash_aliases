@@ -14,6 +14,7 @@ php() {
 }
 
 alias artisan="php artisan"
+alias phpunit="vendor/bin/phpunit"
 
 export -f composer
 export -f php
