@@ -10,11 +10,11 @@ composer() {
 }
 
 php() {
-  docker exec -it dominenv_app php $@
+  docker exec -u $USER_ID -it dominenv_app php $@
 }
 
 mysql() {
-  docker exec -it dominenv_mysql mysql --user=root --password=secret
+  docker exec -u $USER_ID -it dominenv_mysql mysql --user=root --password=secret
 }
 
 alias artisan="php artisan"
