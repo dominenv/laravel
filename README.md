@@ -15,9 +15,10 @@ I followed the simple principle of **"one command to get everything up and runni
 
 There are also some aliases you will be able to use:
 
-* php;
-* phpunit;
-* artisan;
+* `php`;
+* `phpunit`;
+* `artisan`;
+* `mysql` (just type it to log into the server, you won't need to insert user and password);
 
 ### Prerequisites
 
@@ -39,7 +40,6 @@ The application will be available at `http://localhost:8080`. To access the data
 ### To Do
 
 * start using semantic versioning;
-* add `mysql` alias to access the database via command line;
 
 ### How Does it Work?
 

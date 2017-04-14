@@ -13,11 +13,16 @@ php() {
   docker exec -it dominenv_app php $@
 }
 
+mysql() {
+  docker exec -it dominenv_mysql mysql --user=root --password=secret
+}
+
 alias artisan="php artisan"
 alias phpunit="vendor/bin/phpunit"
 
 export -f composer
 export -f php
+export -f mysql
 
 if [ ! -d $PWD/app ]; then
   ./setup
