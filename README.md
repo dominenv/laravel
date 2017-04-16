@@ -2,7 +2,7 @@
 
 *Current Version: 0.1*
 
-**DoMinEnv** stands for **Docker Minimal environment**. It's a series of script/config files/stuff that will make Laravel applications development easier. It uses Docker under the hood.
+**DoMinEnv** stands for **Docker Minimal Environments**. It's a series of script/config files/stuff that will make Laravel applications development easier. It uses Docker under the hood.
 
 The idea was born after having some issues with LaraDock: I really like the project but I wanted something more *minimalistic*.
 
