@@ -24,7 +24,8 @@ There are also some aliases you will be able to use:
 
 ### Prerequisites
 
-* Docker/Docker Compose;
+* Docker (tested with 1.12);
+* Docker Compose (tested with 1.6.0);
 
 Yup, nothing more!
 
