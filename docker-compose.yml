@@ -8,6 +8,7 @@ services:
     working_dir: /var/www
     volumes:
       - ./app:/var/www
+    user: "${USER_ID}"
     environment:
       - "USER_ID=${USER_ID}"
     networks:

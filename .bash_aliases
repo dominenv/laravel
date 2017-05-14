@@ -1,12 +1,13 @@
 
 # export current user id
 export USER_ID=$(id -u -r)
+export USER_NAME=$(whoami)
 
 # change shell appearance to notify user he can use tools
 PS1="\[\e[1;31m\](dominenv)\[\e[0m\] $PS1"
 
 composer() {
-   docker run -u $USER_ID -it --rm -v $(pwd):/app -v ~/.composer/cache:/composer/cache composer/composer $@
+   docker run -u $USER_ID -it --rm -v $(pwd):/app -v $(pwd)/composer/cache:/composer/cache composer/composer $@
 }
 
 php() {
@@ -25,6 +26,7 @@ export -f php
 export -f mysql
 
 if [ ! -d $PWD/app ]; then
+  docker-compose build --build-arg USER_NAME=${USER_NAME} --build-arg USER_ID=${USER_ID} app
   ./setup
 fi
 
